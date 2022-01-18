@@ -1,7 +1,7 @@
 package com.self.viewtoglrendering;
 
 import android.opengl.GLSurfaceView;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 import com.self.viewtoglrendering.cuberenerer.CubeGLRenderer;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private GLSurfaceView mGLSurfaceView;
     private GLRenderable mGLLinearLayout;
@@ -38,7 +38,8 @@ public class MainActivity extends ActionBarActivity {
 
         mWebView.setWebViewClient(new WebViewClient());
         mWebView.setWebChromeClient(new WebChromeClient());
-        mWebView.loadUrl("http://stackoverflow.com/questions/12499396/is-it-possible-to-render-an-android-view-to-an-opengl-fbo-or-texture");
+//        mWebView.loadUrl("http://stackoverflow.com/questions/12499396/is-it-possible-to-render-an-android-view-to-an-opengl-fbo-or-texture");
+        mWebView.loadUrl("www.naver.com");
     }
 
 
